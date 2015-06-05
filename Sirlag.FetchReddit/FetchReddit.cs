@@ -21,7 +21,7 @@ namespace Sirlag.FetchReddit
                 posts.Add(post);
                 Console.WriteLine("\t{0} - {1}", i, post.Title);
             }
-            Console.Write("View");
+            Console.Write("View: ");
             var answer = Console.ReadLine();
             PrintPost(posts[Convert.ToInt32(answer) - 1]);
         }
